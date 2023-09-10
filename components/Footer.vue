@@ -13,5 +13,6 @@
       target="_blank"
     />
     <DarkToggle />
+    <LangToggle />
   </div>
 </template>
