@@ -50,9 +50,11 @@
   "dependencies": {
     "@iconify-json/carbon": "^1.1.19",
     "@pinia/nuxt": "^0.4.11",
+    "@vant/nuxt": "^1.0.2",
     "@vueuse/nuxt": "^10.3.0",
     "dayjs": "^1.11.9",
-    "nuxt": "^3.6.5"
+    "nuxt": "^3.6.5",
+    "vant": "^4.6.8"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
