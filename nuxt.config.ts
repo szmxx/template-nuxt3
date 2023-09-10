@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
+    '@vant/nuxt',
   ],
   runtimeConfig: {
     public: {

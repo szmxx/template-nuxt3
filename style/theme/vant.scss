@@ -1,0 +1,14 @@
+:root {
+  --van-blue: rgb(var(--color-primary)) !important;
+  --van-red: rgb(var(--color-danger)) !important;
+  --van-orange: rgb(var(--color-warning)) !important;
+  --van-green: rgb(var(--color-success)) !important;
+  --van-orange-dark: #ed6a0c;
+  --van-orange-light: #fffbe8;
+  --van-text-color: rgb(var(--text-primary)) !important;
+  --van-text-color-2: rgb(var(--text-auxiliary)) !important;
+  --van-text-color-3: rgb(var(--text-hint)) !important;
+  --van-background: rgb(var(--fill-primary)) !important;
+  --van-background-2: rgb(var(--fill-default)) !important;
+  --van-border-color: rgb(var(--border-primary)) !important;
+}
