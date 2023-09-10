@@ -1,0 +1,40 @@
+<!--
+ * @Author: cola
+ * @Date: 2023-08-06 17:42:54
+ * @LastEditors: cola
+ * @Description:
+-->
+<script setup lang="ts">
+const { data } = await useGet<IApi>(
+  "/api",
+  {},
+  {
+    key: "count",
+  },
+);
+const { setCount } = useCountStore();
+const { count } = storeToRefs(useCountStore());
+function dec() {
+  setCount(count.value - 1);
+}
+function inc() {
+  setCount(count.value + 1);
+}
+const now = computed(() => format(data.value.startAt));
+</script>
+
+<template>
+  <div class="center gap-x-2">
+    <button class="bg-success rounded p-1" @click="dec()">
+      <div i-carbon-subtract />
+    </button>
+    <div>
+      {{ count }}
+    </div>
+    <button class="bg-success rounded p-1" @click="inc()">
+      <div i-carbon-add />
+    </button>
+  </div>
+  <div>{{ data?.pageview }}</div>
+  <div>{{ now }}</div>
+</template>
