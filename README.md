@@ -1,10 +1,12 @@
 # ✨ Template-Nuxt3
 
-[![package lang][lang]][lang]
+[![Lint][lint]](https://github.com/szmxx/template-nuxt3/actions/workflows/lint.yml)
+[![Test][test]](https://github.com/szmxx/template-nuxt3/actions/workflows/test.yml)
+[![Build][build]](https://github.com/szmxx/template-nuxt3/actions/workflows/build.yml)
 [![package version][version]][version]
+[![package lang][lang]][lang]
 [![package contributors][contributors]][contributors]
 [![package lastcommit][lastcommit]][lastcommit]
-[![package workflow][workflow]][workflow]
 
 ## Features
 
@@ -54,8 +56,10 @@ Published under [MIT License](./LICENSE).
 
 <!-- Badges -->
 
+[lint]: https://github.com/szmxx/template-nuxt3/actions/workflows/lint.yml/badge.svg
+[build]: https://github.com/szmxx/template-nuxt3/actions/workflows/build.yml/badge.svg
+[test]: https://github.com/szmxx/template-nuxt3/actions/workflows/test.yml/badge.svg
 [lang]: https://img.shields.io/github/languages/top/szmxx/template-nuxt3
 [version]: https://img.shields.io/github/package-json/v/szmxx/template-nuxt3
 [contributors]: https://img.shields.io/github/contributors/szmxx/template-nuxt3
 [lastcommit]: https://img.shields.io/github/last-commit/szmxx/template-nuxt3/main
-[workflow]: https://img.shields.io/github/actions/workflow/status/szmxx/template-nuxt3/ci.yml
