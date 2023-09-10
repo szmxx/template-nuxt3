@@ -51,6 +51,7 @@
     "@iconify-json/carbon": "^1.1.19",
     "@pinia/nuxt": "^0.4.11",
     "@vueuse/nuxt": "^10.3.0",
+    "dayjs": "^1.11.9",
     "nuxt": "^3.6.5"
   },
   "devDependencies": {

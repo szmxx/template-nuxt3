@@ -5,22 +5,25 @@
  * @Description:
 -->
 <script setup lang="ts">
-const { data } = await useGet<IApi>(
-  "/api",
-  {},
-  {
-    key: "count",
-  },
-);
-const { setCount } = useCountStore();
-const { count } = storeToRefs(useCountStore());
-function dec() {
-  setCount(count.value - 1);
-}
-function inc() {
-  setCount(count.value + 1);
-}
-const now = computed(() => format(data.value.startAt));
+  import dayjs from 'dayjs'
+  const { data } = await useGet<IApi>(
+    '/api',
+    {},
+    {
+      key: 'count',
+    },
+  )
+  const { setCount } = useCountStore()
+  const { count } = storeToRefs(useCountStore())
+  function dec() {
+    setCount(count.value - 1)
+  }
+  function inc() {
+    setCount(count.value + 1)
+  }
+  const now = computed(() =>
+    dayjs(data.value.startAt).format('YYYY-MM-DD HH:mm:ss'),
+  )
 </script>
 
 <template>
