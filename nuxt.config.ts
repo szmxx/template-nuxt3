@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
+    '@nuxtjs/i18n',
   ],
   runtimeConfig: {
     public: {
@@ -28,6 +29,28 @@ export default defineNuxtConfig({
     inlineSSRStyles: false,
     renderJsonPayloads: true,
     typedPages: true,
+  },
+  i18n: {
+    langDir: 'locales/',
+    vueI18n: './nuxt-i18n.ts',
+    lazy: true,
+    locales: [
+      {
+        code: 'zh-CN',
+        iso: 'zh-CN',
+        name: '简体中文',
+        file: 'cn.json',
+      },
+      {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English',
+        file: 'en.json',
+      },
+    ],
+    defaultLocale: 'zh-CN',
+    strategy: 'prefix_except_default',
+    detectBrowserLanguage: false,
   },
 
   css: ['@unocss/reset/tailwind.css', '@/style/global.scss'],
