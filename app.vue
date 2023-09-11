@@ -5,11 +5,31 @@
  * @Description:
 -->
 <script setup lang="ts">
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
   import { name } from './package.json'
 
   useHead({
     title: name,
   })
+  const { locale } = useI18n()
+  let current = shallowRef()
+  watch(
+    locale,
+    (newVal) => {
+      switch (newVal) {
+        case 'zh-CN':
+          current.value = zhCn
+          break
+        case 'en':
+          current.value = null
+      }
+    },
+    {
+      immediate: true,
+    },
+  )
 </script>
 
 <template>
