@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
+    '@element-plus/nuxt',
   ],
   runtimeConfig: {
     public: {
@@ -27,7 +28,18 @@ export default defineNuxtConfig({
     renderJsonPayloads: true,
     typedPages: true,
   },
-
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "@/style/theme/element" as element;',
+        },
+      },
+    },
+  },
+  colorMode: {
+    classSuffix: '',
+  },
   css: ['@unocss/reset/tailwind.css', '@/style/global.scss'],
 
   nitro: {
@@ -48,6 +60,10 @@ export default defineNuxtConfig({
       routes: ['/'],
       ignore: [],
     },
+  },
+  elementPlus: {
+    importStyle: 'scss',
+    themes: ['dark'],
   },
 
   app: {

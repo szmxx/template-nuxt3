@@ -5,20 +5,20 @@
  * @Description:
 -->
 <script setup lang="ts">
-const color = useColorMode();
+  const color = useColorMode()
 
-useHead({
-  meta: [
-    {
-      id: "theme-color",
-      name: "theme-color",
-    },
-  ],
-});
+  useHead({
+    meta: [
+      {
+        id: 'theme-color',
+        name: 'theme-color',
+      },
+    ],
+  })
 
-function toggleDark() {
-  color.preference = color.value === "dark" ? "light" : "dark";
-}
+  function toggleDark() {
+    color.preference = color.value === 'dark' ? 'light' : 'dark'
+  }
 </script>
 
 <template>
