@@ -24,6 +24,7 @@
           break
         case 'en':
           current.value = null
+          break
       }
     },
     {
