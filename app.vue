@@ -39,10 +39,12 @@
       <VitePwaManifest />
     </Head>
     <Body>
-      <NuxtLayout>
-        <NuxtLoadingIndicator />
-        <NuxtPage />
-      </NuxtLayout>
+      <el-config-provider :locale="current">
+        <NuxtLayout>
+          <NuxtLoadingIndicator />
+          <NuxtPage />
+        </NuxtLayout>
+      </el-config-provider>
     </Body>
   </Html>
 </template>
