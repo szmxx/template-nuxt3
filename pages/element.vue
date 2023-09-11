@@ -26,6 +26,14 @@
       </el-form>
     </div>
   </div>
+  <div class="flex gap-x-2">
+    <el-time-picker v-model="time.time1" placeholder="Arbitrary time" />
+    <el-time-picker
+      v-model="time.time2"
+      arrow-control
+      placeholder="Arbitrary time"
+    />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -33,5 +41,9 @@
     name: '',
     region: '',
     type: '',
+  })
+  const time = reactive({
+    time1: '',
+    time2: '',
   })
 </script>

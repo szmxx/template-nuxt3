@@ -5,11 +5,11 @@
  * @Description:
 -->
 <script setup lang="ts">
-import { name } from "./package.json";
+  import { name } from './package.json'
 
-useHead({
-  title: name,
-});
+  useHead({
+    title: name,
+  })
 </script>
 
 <template>
