@@ -8,11 +8,8 @@
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
-  import { name } from './package.json'
 
-  useHead({
-    title: name,
-  })
+
   const { locale } = useI18n()
   let current = shallowRef()
   watch(
@@ -32,6 +29,7 @@
     },
   )
 </script>
+<script setup lang="ts"></script>
 
 <template>
   <Html dir="ltr">

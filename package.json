@@ -29,7 +29,7 @@
   ],
   "scripts": {
     "build": "nuxi build --dotenv .env.production",
-    "dev": "nuxi dev --dotenv .env.development",
+    "dev": "nuxi dev --dotenv .env.development --host",
     "dev:pwa": "VITE_PLUGIN_PWA=true nuxi dev",
     "start": "node .output/server/index.mjs",
     "typecheck": "vue-tsc --noEmit",
@@ -49,12 +49,14 @@
   },
   "dependencies": {
     "@element-plus/nuxt": "^1.0.5",
-    "@iconify-json/carbon": "^1.1.19",
+    "element-plus": "^2.3.12",
+    "@iconify-json/ion": "^1.1.12",
+    "@nuxtseo/module": "2.0.0-beta.15",
     "@pinia/nuxt": "^0.4.11",
     "@vueuse/nuxt": "^10.3.0",
     "dayjs": "^1.11.9",
-    "element-plus": "^2.3.12",
-    "nuxt": "^3.6.5"
+    "lodash-es": "^4.17.21",
+    "nuxt": "^3.7.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
@@ -63,13 +65,13 @@
     "@nuxt/devtools": "^0.7.4",
     "@nuxtjs/color-mode": "^3.3.0",
     "@nuxtjs/i18n": "8.0.0-rc.4",
+    "@types/lodash-es": "^4.17.9",
     "@unocss/nuxt": "^0.54.1",
     "@vite-pwa/nuxt": "^0.1.0",
     "@vue/eslint-config-prettier": "^8.0.0",
     "@vue/eslint-config-typescript": "^11.0.3",
     "changelogen": "^0.5.5",
     "commitizen": "^4.3.0",
-    "consola": "^3.2.3",
     "eslint": "^8.46.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-vue": "^9.17.0",

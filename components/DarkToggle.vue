@@ -24,8 +24,8 @@
 <template>
   <button class="cursor-pointer" @click="toggleDark">
     <div
-      class="i-carbon-sun"
-      :class="{ 'i-carbon-moon!': color?.preference === 'dark' }"
+      class="i-ion-sunny-sharp"
+      :class="{ 'i-ion-moon-sharp!': color?.preference === 'dark' }"
     />
   </button>
 </template>
