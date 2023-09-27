@@ -15,11 +15,19 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
     '@element-plus/nuxt',
+    '@nuxtseo/module',
   ],
   runtimeConfig: {
     public: {
       name: process.env.NUXT_APP_NAME,
     },
+  },
+  site: {
+    titleSeparator: '·',
+    defaultLocale: 'zh-CN',
+    name: process.env.NUXT_APP_NAME,
+    indexable: true,
+    url: process.env.NUXT_PUBLIC_SITE_URL,
   },
 
   experimental: {
@@ -68,6 +76,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      titleTemplate: '%s - ' + process.env.NUXT_APP_NAME,
       link: [
         { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
         { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' },
@@ -83,6 +92,12 @@ export default defineNuxtConfig({
         {
           name: 'apple-mobile-web-app-status-bar-style',
           content: 'black-translucent',
+        },
+      ],
+      script: [
+        {
+          src: 'https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxxxxxxxx',
+          type: 'text/javascript',
         },
       ],
     },

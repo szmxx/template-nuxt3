@@ -4,13 +4,7 @@
  * @LastEditors: cola
  * @Description:
 -->
-<script setup lang="ts">
-  import { name } from './package.json'
-
-  useHead({
-    title: name,
-  })
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <Html dir="ltr">
