@@ -6,9 +6,9 @@
 -->
 <template>
   <div class="center gap-x-4">
-    <NuxtLink i-carbon-campsite to="/" />
+    <NuxtLink i-ion-home to="/" />
     <a
-      i-carbon-logo-github
+      i-ion-logo-github
       href="https://github.com/szmxx/template-nuxt3"
       target="_blank"
     />
