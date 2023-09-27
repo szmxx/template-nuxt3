@@ -25,6 +25,7 @@
 - Http
 - Eslint & Prettier & Stylelint
 - Commitlint & Husky & Lint-Staged
+- AUTO SEO
 
 ## 💻 Development
 

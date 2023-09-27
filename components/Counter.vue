@@ -29,13 +29,13 @@
 <template>
   <div class="center gap-x-2">
     <button class="bg-success rounded p-1" @click="dec()">
-      <div i-carbon-subtract />
+      <div i-ion-remove />
     </button>
     <div>
       {{ count }}
     </div>
     <button class="bg-success rounded p-1" @click="inc()">
-      <div i-carbon-add />
+      <div i-ion-add />
     </button>
   </div>
   <div>{{ data?.pageview }}</div>
